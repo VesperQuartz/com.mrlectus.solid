@@ -20,6 +20,7 @@
 		"@hono/zod-validator": "^0.7.2",
 		"@kobalte/core": "^0.13.11",
 		"@neondatabase/serverless": "^1.0.1",
+		"@solidjs/router": "^0.15.3",
 		"@solidjs/start": "^1.1.2",
 		"@tanstack/router-plugin": "^1.112.0",
 		"@tanstack/solid-router": "^1.114.1",
