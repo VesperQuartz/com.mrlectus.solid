@@ -1,4 +1,5 @@
 import { createAuthClient } from "better-auth/solid";
+import { envClient } from "~/config/env";
 export const authClient = createAuthClient({
-	baseURL: "http://localhost:3000",
+	baseURL: envClient.VITE_BASE_URL,
 });

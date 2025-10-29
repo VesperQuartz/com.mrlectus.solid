@@ -6,6 +6,7 @@ export const Route = createFileRoute("/")({
 });
 
 function RouteComponent() {
+	console.log(import.meta.env);
 	return (
 		<main class="">
 			<Button variant={"secondary"} class="">

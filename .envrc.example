@@ -1,0 +1,2 @@
+export BETTER_AUTH_SECRET=
+export DB_URL=
