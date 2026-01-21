@@ -10,9 +10,7 @@ import TanStackQueryProvider from '../integrations/tanstack-query/provider.tsx'
 import { HydrationScript } from 'solid-js/web'
 import { Suspense } from 'solid-js'
 
-import Header from '../components/Header'
-
-import styleCss from '../styles.css?url'
+import styleCss from '../globals.css?url'
 
 export const Route = createRootRouteWithContext()({
   head: () => ({
@@ -31,10 +29,8 @@ function RootComponent() {
         <HeadContent />
         <Suspense>
           <TanStackQueryProvider>
-            <Header />
-
             <Outlet />
-            <TanStackRouterDevtools />
+            <TanStackRouterDevtools position="bottom-left" />
           </TanStackQueryProvider>
         </Suspense>
         <Scripts />
